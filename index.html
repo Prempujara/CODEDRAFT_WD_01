@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Interactive Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar">
+        <a href="#section1">Home</a>
+        <a href="#section2">About</a>
+        <a href="#section3">Services</a>
+        <a href="#section4">Gallery</a>
+        <a href="#section5">Contact</a>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="content">
+        <div id="section1" class="section">
+            <h1>Welcome to My Website</h1>
+            <p>This is a website that I created using HTML, CSS, and JavaScript.</p>
+            <button onclick="scrollToSection('#section2')">Learn More</button>
+        </div>
+        <div id="section2" class="section">
+            <h2>About Me</h2>
+            <p>I am a front-end web developer with a passion for creating engaging and user-friendly websites.</p>
+        </div>
+        <div id="section3" class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Development</li>
+                
+                <li>SEO Optimization</li>
+                <li>Technical Support</li>
+            </ul>
+        </div>
+        <div id="section4" class="section">
+            <h2>Gallery</h2>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Gallery Image 1">
+                <img src="image2.jpg" alt="Gallery Image 2">
+                <img src="image3.jpg" alt="Gallery Image 3">
+            </div>
+        </div>
+        <div id="section5" class="section">
+            <h2>Contact Us</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
